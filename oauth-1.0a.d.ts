@@ -120,7 +120,7 @@ declare namespace OAuth {
    * OAuth key/secret pair.
    */
   export interface Consumer {
-    key: string;
+    public: string;
     secret: string;
   }
 
@@ -185,8 +185,9 @@ declare namespace OAuth {
    * OAuth token key/secret pair.
    */
   export interface Token {
-    key: string;
+    public: string;
     secret: string;
+    verifier?:string;
   }
 
 }
